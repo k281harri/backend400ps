@@ -1,0 +1,8 @@
+// Backend First
+// 1. Setup boilerplate - server is Listening
+// 2. create my model
+// Create routes in order
+// 1, create
+// 2 read
+// 3 update
+// delete
