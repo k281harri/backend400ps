@@ -1,8 +1,8 @@
 // Backend First
-// 1. Setup boilerplate - server is Listening
+// 1. Setup boilerplate - get server is Listening and Database setup
 // 2. create my model
 // Create routes in order
-// 1, create
-// 2 read
-// 3 update
-// delete
+    // 1. create
+    // 2. read
+    // 3. update
+    // 4. delete
