@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Read`
+// Read
 router.get('/', async (req, res) => {
   try {
     let allTodos = await Todo.find({});
@@ -48,7 +48,7 @@ router.delete('/:id', async (req, res) => {
   try {
     await Todo.findByIdAndDelete(req.params.id);
 
-    res.json({ msg: 'todo Deleted' });
+    res.json({ msg: 'Todo Deleted' });
   } catch (err) {
     console.error(err);
     res.status(500).json({ msg: 'Server Error' });
