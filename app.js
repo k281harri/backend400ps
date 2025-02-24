@@ -6,8 +6,8 @@
 
 // Schema - Reservations
 {
-    name: String,
-    date: Date,
-    time: String,
-    people: Number
-}
+   // name: String,
+   // date: Date,
+   // time: String,
+   // people: Number
+}//
