@@ -26,6 +26,25 @@ app.use('/todo', todoRoutes);
 //     .then(() => console.log('MongoDB connected'))
 //     .catch(err => console.error('MongoDB connection error:', err));
 
+// menu schema
+const menuSchema = new mongoose.Schema({
+  name: String,
+  price: Number,
+  description: String,
+});
+
+const Menu = mongoose.model('Menu', menuSchema);
+
+app.get('/menu', async (req, res) => {
+  const menuItems = await Menu.find();
+  res.json(menuItems);
+});
+
+app.post('/menu', async (req, res) => {
+  const newItem = new Menu(req.body);
+  await newItem.save();
+  res.json(newItem);
+});
 
 
 // Listener
